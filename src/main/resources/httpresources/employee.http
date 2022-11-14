@@ -1,0 +1,21 @@
+###
+GET http://localhost:8080/techxtor/employees
+
+###
+GET http://localhost:8080/techxtor/employee/101
+
+###
+GET http://localhost:8080/techxtor/employee?id=102
+
+###
+POST http://localhost:8080/techxtor/employee
+Content-Type: application/json
+
+{
+  "eId": 104,
+  "eName": "Achyut",
+  "position": "SE"
+}
+
+###
+

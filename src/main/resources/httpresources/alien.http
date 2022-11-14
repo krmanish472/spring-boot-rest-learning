@@ -1,0 +1,31 @@
+### produces JSON - default jackson behavior
+GET http://localhost:8080/techxtor/aliens
+
+### produces JSON
+GET http://localhost:8080/techxtor/aliens
+Accept: application/json #response body
+
+### produces XML
+GET http://localhost:8080/techxtor/aliens
+Accept: application/xml #response body
+
+### consumes JSON
+POST http://localhost:8080/techxtor/alien
+Content-Type: application/json #request body
+
+{
+  "id": 103,
+  "name": "Habib"
+}
+
+### consumes XML
+POST http://localhost:8080/techxtor/alien
+Content-Type: application/xml #request body
+
+<item>
+    <id>103</id>
+    <name>Habib</name>
+</item>
+
+
+###
